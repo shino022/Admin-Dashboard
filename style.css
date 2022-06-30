@@ -129,6 +129,7 @@ body {
 }
 .main-contents {
   display: grid;
+  gap:15px;
   grid-template-columns: 1fr 250px;
   grid-template-rows: auto auto;
   padding: 30px 20px;
@@ -162,18 +163,49 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-size:14px;
   padding: 20px 20px;
   background-color: white;
   height: 170px;
   border-radius: 8px;
   box-shadow: 5px 0px var(--accent-color) inset, 3px 3px 3px rgba(0, 0, 0, 0.15);
 }
-.main-contents .cards .card .contents {
 
+.main-contents .cards .card p {
+  color:gray;
+  font-size:14px;
 }
+
 .main-contents .cards .card .icons {
   display:flex;
   gap:15px;
   align-self: flex-end;
+}
+
+.main-contents .announcements .card {
+  padding:20px 20px;
+  background-color: white;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+
+}
+
+.main-contents .announcements .card .label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.main-contents .announcements .card > div{
+  padding:10px 5px;
+}
+
+.main-contents .announcements p {
+  color:gray;
+  font-size:13px;
+}
+
+.main-contents .announcements .maintenance {
+  border-bottom: 1px solid rgb(162, 162, 162) ;
+}
+.main-contents .announcements .share-day {
+  border-bottom: 1px solid rgb(162, 162, 162) ;
 }
