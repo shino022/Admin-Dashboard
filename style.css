@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap');
 :root {
   --main-color: #d97706;
   --secondary-color: #fef3c7;
@@ -86,6 +87,45 @@ body {
   width: 40px;
 }
 
+.header .secend-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.header .secend-row .profile {
+  display: flex;
+  align-items: center;
+  gap:20px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.header .secend-row .profile .hi{
+  font-size: 14px;
+}
+
+.header .secend-row .profile .user-name{
+  font-size: 24px;
+}
+
+.header .secend-row .profile img {
+  height: 70px;
+  width: 70px;
+}
+.header .secend-row .buttons {
+  display: flex;
+  gap: 25px;
+}
+.header .secend-row .buttons button{
+  background-color: var(--main-color);
+  border-width: 0;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
 .main-contents {
   background-color: var(--secondary-color);
 }
