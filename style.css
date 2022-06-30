@@ -2,6 +2,7 @@
 :root {
   --main-color: #d97706;
   --secondary-color: #fef3c7;
+  --accent-color: #3b82f6;
 }
 
 p {
@@ -135,6 +136,44 @@ body {
   background-color: var(--secondary-color);
 }
 
-.main-contents .cards {
+.main-contents > div > .label {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom:15px;
+}
+
+.main-contents .your-projects {
+  min-width: 650px;
   grid-area: 1 / 1 / 3 / 2;
+}
+
+.main-contents .cards .label {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.main-contents .cards {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.main-contents .cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size:14px;
+  padding: 20px 20px;
+  background-color: white;
+  height: 170px;
+  border-radius: 8px;
+  box-shadow: 5px 0px var(--accent-color) inset, 3px 3px 3px rgba(0, 0, 0, 0.15);
+}
+.main-contents .cards .card .contents {
+
+}
+.main-contents .cards .card .icons {
+  display:flex;
+  gap:15px;
+  align-self: flex-end;
 }
