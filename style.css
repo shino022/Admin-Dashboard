@@ -1,5 +1,10 @@
 :root {
   --main-color: #d97706;
+  --secondary-color: #fef3c7;
+}
+
+p {
+  margin: 0;
 }
 
 body {
@@ -40,9 +45,47 @@ body {
 }
 
 .header {
-  
+  padding:17px 40px;
+}
+
+.header .first-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .first-row form {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.header .first-row form input{
+  min-width: 100px;
+  flex-grow: .5;
+  padding-left: 15px;
+  margin-left: 15px;
+  height: 24px;
+  font-size: 18px;
+  background-color: var(--secondary-color);
+  border-radius: 24px;
+  border-width:0;
+}
+
+.header .first-row .profile {
+  display: flex;
+  align-items: center;
+  gap:20px;
+  font-size: 18px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.header .first-row .profile img {
+  height: 40px;
+  width: 40px;
 }
 
 .main-contents {
-  background-color: #fffbeb;
+  background-color: var(--secondary-color);
 }
