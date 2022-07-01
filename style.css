@@ -51,6 +51,7 @@ body {
 }
 
 .header .first-row {
+  margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -129,9 +130,9 @@ body {
 }
 .main-contents {
   display: grid;
-  gap:15px;
+  gap:20px;
   grid-template-columns: 1fr 250px;
-  grid-template-rows: auto auto;
+  grid-template-rows: 470px auto;
   padding: 30px 20px;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.205) inset;
   background-color: var(--secondary-color);
@@ -155,7 +156,7 @@ body {
 
 .main-contents .cards {
   display: grid;
-  gap: 15px;
+  gap: 30px 20px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
@@ -165,7 +166,7 @@ body {
   justify-content: space-between;
   padding: 20px 20px;
   background-color: white;
-  height: 170px;
+  height: 180px;
   border-radius: 8px;
   box-shadow: 5px 0px var(--accent-color) inset, 3px 3px 3px rgba(0, 0, 0, 0.15);
 }
@@ -182,7 +183,7 @@ body {
 }
 
 .main-contents .announcements .card {
-  padding:20px 20px;
+  padding:0px 20px;
   background-color: white;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
@@ -195,7 +196,7 @@ body {
 }
 
 .main-contents .announcements .card > div{
-  padding:10px 5px;
+  padding:20px 5px;
 }
 
 .main-contents .announcements p {
@@ -209,3 +210,34 @@ body {
 .main-contents .announcements .share-day {
   border-bottom: 1px solid rgb(162, 162, 162) ;
 }
+
+
+
+.main-contents .trending img {
+  height: 40px;
+  width: 40px;
+}
+
+.main-contents .trending .user {
+  display:flex;
+  font-size: 14px;
+  gap:20px;
+  align-items:center;
+}
+
+.main-contents .trending .user .user-name {
+}
+
+.main-contents .trending .user .app {
+  color: gray;
+}
+.main-contents .trending .card {
+  gap:10px;
+  padding:20px 20px;
+  background-color: white;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
